@@ -8,6 +8,10 @@ import { fadeIn, textVariant } from '../utils/motion';
 const About = () => {
   return (
     <>
+      {/* Divider for mobile at top of About */}
+      <div className="block lg:hidden mt-10">
+        <hr className="border-secondary border-t-2 mb-8" />
+      </div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
